@@ -1,1 +1,8 @@
-
+1. sudo nano /etc/postgresql/*/main/pg_hba.conf
+2. find a line named "find all postgres peer"
+3. change "peer" with "md5"
+4. save and exit "ctrl+x then y then enter"
+5. sudo su - postgres
+6. psql
+7. ALTER USER postgres WITH password '123456'; ( type whatever pass want to use)
+8. get out and done
