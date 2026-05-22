@@ -1,15 +1,18 @@
 {
+  "project_panel": {
+    "dock": "left"
+  },
   "icon_theme": "VSCode Icons for Zed (Dark Angular)",
   "ui_font_size": 20,
   "buffer_font_size": 18,
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "VSCode Dark Modern"
+    "dark": "VScode Dark Plus",
   },
   "show_edit_predictions": false,
   "soft_wrap": "editor_width",
   "inlay_hints": {
-    "enabled": true
-  }
+    "enabled": true,
+  },
 }
