@@ -45,6 +45,7 @@ autoinstall:
     - postgresql
     - postgresql-contrib
     - gnome-shell-extension-manager
+    - redis-server
   snaps:
      - name: postman
        channel: stable
@@ -60,3 +61,5 @@ autoinstall:
     - curtin in-target -- su seththorne -c "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.5/install.sh | bash"
     - curtin in-target -- su seththorne -c "bash -c 'source \$HOME/.nvm/nvm.sh && nvm install 24'"
     - curtin in-target -- su seththorne -c "curl -f https://zed.dev/install.sh | sh"
+    - curtin in-target -- su seththorne -c "bash -c 'source \$HOME/.cargo/env && cargo install sqlx-cli'"
+    - curtin in-target -- su seththorne -c "bash -c 'source \$HOME/.cargo/env && cargo install watchexec-cli'"
