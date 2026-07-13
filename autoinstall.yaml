@@ -1,0 +1,61 @@
+autoinstall:
+  version: 1
+  locale: "en_US.UTF-8"
+  timezone: Asia/Dhaka
+  updates: all
+  drivers:
+    install: true
+  keyboard:
+      layout: us
+      variant: ""
+      toggle: null
+  source:
+    search_drivers: true
+    id: ubuntu-desktop
+  identity:
+    username: seththorne
+    hostname: seththorne
+    password: "$6$15/8kNXMM/Q/xdnU$rvQGeQVDOb69AgHx4Nxo7yQDpF7aU18nieQGdickpTyi4f5sWWjw2wNkOIMNc9tJ14HgIj2LooA2o.j1KWJin1"
+  storage:
+    swap:
+      size: 17179869184
+    layout:
+      name: direct
+      match:
+        path: /dev/nvme0n1
+  ssh:
+    install-server: true
+    allow-pw: true
+  packages:
+    - git
+    - curl
+    - build-essential
+    - cmake
+    - pkg-config
+    - wget
+    - python3
+    - python3-pip
+    - libssl-dev
+    - libclang-dev
+    - zlib1g-dev
+    - libcurl4-openssl-dev
+    - libpq-dev
+    - libsqlite3-dev
+    - htop
+    - postgresql
+    - postgresql-contrib
+  snaps:
+     - name: postman
+       channel: stable
+     - name: beekeeper-studio
+       channel: stable
+     - name: extension-manager
+       channel: stable
+  late-commands:
+    - curtin in-target -- apt-get update
+    - curtin in-target -- sh -c "echo msttcorefonts msttcorefonts/accepted-mscorefonts-eula select true | debconf-set-selections"
+    - curtin in-target -- sh -c "DEBIAN_FRONTEND=noninteractive apt-get install -y ubuntu-restricted-extras"
+    - curtin in-target -- su seththorne -c "curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y"
+    - curtin in-target -- su seththorne -c "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.5/install.sh | bash"
+    - curtin in-target -- su seththorne -c "bash -c 'source \$HOME/.nvm/nvm.sh && nvm install 24'"
+    - curtin in-target -- su seththorne -c "curl -f https://zed.dev/install.sh | sh"
