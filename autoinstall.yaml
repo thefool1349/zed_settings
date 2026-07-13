@@ -46,6 +46,9 @@ autoinstall:
     - postgresql-contrib
     - gnome-shell-extension-manager
     - redis-server
+    - tmux
+    - flatpak
+    - gnome-software-plugin-flatpak
   snaps:
      - name: postman
        channel: stable
@@ -63,3 +66,4 @@ autoinstall:
     - curtin in-target -- su seththorne -c "curl -f https://zed.dev/install.sh | sh"
     - curtin in-target -- su seththorne -c "bash -c 'source \$HOME/.cargo/env && cargo install sqlx-cli'"
     - curtin in-target -- su seththorne -c "bash -c 'source \$HOME/.cargo/env && cargo install watchexec-cli'"
+    - curtin in-target -- flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
