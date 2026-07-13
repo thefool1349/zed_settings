@@ -67,6 +67,7 @@ autoinstall:
     - curtin in-target -- sh -c "DEBIAN_FRONTEND=noninteractive apt-get install -y ubuntu-restricted-extras"
     - curtin in-target -- su seththorne -c "curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y"
     - curtin in-target -- su seththorne -c "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.5/install.sh | bash"
+    - curtin in-target -- su seththorne -c "curl -LsSf https://astral.sh/uv/install.sh | sh"
     - curtin in-target -- su seththorne -c "bash -c 'source \$HOME/.nvm/nvm.sh && nvm install 24'"
     - curtin in-target -- su seththorne -c "curl -f https://zed.dev/install.sh | sh"
     - curtin in-target -- su seththorne -c "bash -c 'source \$HOME/.cargo/env && cargo install sqlx-cli'"
