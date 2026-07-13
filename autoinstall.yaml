@@ -3,6 +3,7 @@ autoinstall:
   locale: "en_US.UTF-8"
   timezone: Asia/Dhaka
   updates: all
+  shutdown: poweroff
   drivers:
     install: true
   keyboard:
@@ -11,7 +12,7 @@ autoinstall:
       toggle: null
   source:
     search_drivers: true
-    id: ubuntu-desktop
+    id: ubuntu-desktop-minimal
   identity:
     username: seththorne
     hostname: seththorne
@@ -41,17 +42,17 @@ autoinstall:
     - libcurl4-openssl-dev
     - libpq-dev
     - libsqlite3-dev
-    - htop
     - postgresql
     - postgresql-contrib
+    - gnome-shell-extension-manager
   snaps:
      - name: postman
        channel: stable
      - name: beekeeper-studio
        channel: stable
-     - name: extension-manager
-       channel: stable
   late-commands:
+    - curtin in-target -- apt-get update
+    - curtin in-target -- add-apt-repository -y multiverse
     - curtin in-target -- apt-get update
     - curtin in-target -- sh -c "echo msttcorefonts msttcorefonts/accepted-mscorefonts-eula select true | debconf-set-selections"
     - curtin in-target -- sh -c "DEBIAN_FRONTEND=noninteractive apt-get install -y ubuntu-restricted-extras"
