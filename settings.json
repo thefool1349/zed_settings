@@ -1,7 +1,4 @@
 {
-  "indent_guides": {
-    "background_coloring": "indent_aware"
-  },
   "project_panel": {
     "dock": "left",
   },
@@ -11,7 +8,7 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "VScode Dark Plus",
+    "dark": "Ayu Dark",
   },
   "show_edit_predictions": false,
   "soft_wrap": "editor_width",
