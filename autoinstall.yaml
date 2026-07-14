@@ -74,5 +74,3 @@ autoinstall:
     - curtin in-target -- su seththorne -c "bash -c 'source \$HOME/.cargo/env && cargo install sqlx-cli'"
     - curtin in-target -- su seththorne -c "bash -c 'source \$HOME/.cargo/env && cargo install watchexec-cli'"
     - curtin in-target -- flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-    - curtin in-target -- ufw allow OpenSSH
-    - curtin in-target -- ufw --force enable
