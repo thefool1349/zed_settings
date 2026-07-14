@@ -54,6 +54,7 @@ autoinstall:
     - jq
     - tree
     - ufw
+    - nginx
   snaps:
      - name: postman
        channel: stable
