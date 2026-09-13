@@ -17,4 +17,23 @@
   },
   "tab_size": 4,
   "hard_tabs": true,
+
+  "languages": {
+    "JavaScript": {
+      "formatter": "prettier",
+      "format_on_save": "on",
+    },
+    "JSX": {
+      "formatter": "prettier",
+      "format_on_save": "on",
+    },
+    "TypeScript": {
+      "formatter": "prettier",
+      "format_on_save": "on",
+    },
+    "TSX": {
+      "formatter": "prettier",
+      "format_on_save": "on",
+    },
+  },
 }
