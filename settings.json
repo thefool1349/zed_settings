@@ -1,81 +1,82 @@
 {
-  "disable_ai": true,
-  "focus_follows_mouse": {
-    "enabled": false
-  },
-  "preview_tabs": {
-    "enable_keep_preview_on_code_navigation": false,
-    "enable_preview_multibuffer_from_code_navigation": false,
-    "enable_preview_from_file_finder": false
-  },
-  "tab_bar": {
-    "show_pinned_tabs_in_separate_row": false
-  },
-  "tabs": {
-    "file_icons": false
-  },
-  "title_bar": {
-    "show_menus": false,
-    "show_branch_status_icon": false
-  },
-  "status_bar": {
-    "show_active_file": false,
-    "line_endings_button": false
-  },
-  "git_panel": {
-    "folder_indicator": "icon",
-    "file_icons": false
-  },
-  "terminal": {
-    "starts_open": true
-  },
-  "languages": {
-  "Rust": {
-    "enable_language_server": true,
-    "formatter": "language_server",
-    "format_on_save": "on"
-  },
-    "Python": {
-      "enable_language_server": true,
-      "tasks": {
-        "prefer_lsp": true
-      }
-    },
-    "JavaScript": {
-      "formatter": "prettier",
-      "format_on_save": "on"
-    },
-    "TypeScript": {
-      "formatter": "prettier",
-      "format_on_save": "on"
-    },
-    "TSX": {
-      "formatter": "prettier",
-      "format_on_save": "on"
-    }
-  },
-  "project_panel": {
-    "hide_hidden": false,
-    "hide_root": true,
-    "git_status_indicator": false,
-    "diagnostic_badges": false,
-    "bold_folder_labels": false,
-    "dock": "left",
-    "auto_fold_dirs": false,
-  },
-  "icon_theme": "VSCode Icons for Zed (Dark Angular)",
-  "ui_font_size": 20,
-  "buffer_font_size": 18,
-  "theme": {
-    "mode": "system",
-    "light": "One Light",
-    "dark": "Ayu Dark",
-  },
-  "show_edit_predictions": false,
-  "soft_wrap": "editor_width",
-  "inlay_hints": {
-    "enabled": true,
-  },
-  "tab_size": 4,
-  "hard_tabs": true,
+	"disable_ai": true,
+	"focus_follows_mouse": {
+		"enabled": false,
+	},
+	"preview_tabs": {
+		"enable_keep_preview_on_code_navigation": false,
+		"enable_preview_multibuffer_from_code_navigation": false,
+		"enable_preview_from_file_finder": false,
+	},
+	"tab_bar": {
+		"show_pinned_tabs_in_separate_row": false,
+	},
+	"tabs": {
+		"file_icons": false,
+	},
+	"title_bar": {
+		"show_menus": false,
+		"show_branch_status_icon": false,
+	},
+	"status_bar": {
+		"show_active_file": false,
+		"line_endings_button": false,
+	},
+	"git_panel": {
+		"folder_indicator": "icon",
+		"file_icons": false,
+	},
+	"terminal": {
+		"starts_open": true,
+	},
+	"languages": {
+		"Rust": {
+			"enable_language_server": true,
+			"formatter": "language_server",
+			"format_on_save": "on",
+		},
+		"Python": {
+			"enable_language_server": true,
+			"tasks": {
+				"prefer_lsp": true,
+			},
+		},
+		"JavaScript": {
+			"formatter": "prettier",
+			"format_on_save": "on",
+		},
+		"TypeScript": {
+			"formatter": "prettier",
+			"format_on_save": "on",
+		},
+		"TSX": {
+			"formatter": "prettier",
+			"format_on_save": "on",
+		},
+	},
+	"project_panel": {
+		"hide_hidden": false,
+		"hide_root": true,
+		"git_status_indicator": false,
+		"diagnostic_badges": false,
+		"bold_folder_labels": false,
+		"dock": "left",
+		"auto_fold_dirs": false,
+	},
+	"icon_theme": "VSCode Icons for Zed (Dark Angular)",
+	"ui_font_size": 20,
+	"buffer_font_size": 18,
+	"theme": {
+		"mode": "system",
+		"light": "One Light",
+		"dark": "Ayu Dark",
+	},
+	"show_edit_predictions": false,
+	"soft_wrap": "editor_width",
+	"inlay_hints": {
+		"enabled": true,
+	},
+	"tab_size": 4,
+	"hard_tabs": true,
+	"format_on_save": "on",
 }
