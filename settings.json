@@ -61,6 +61,7 @@
     "diagnostic_badges": false,
     "bold_folder_labels": false,
     "dock": "left",
+    "auto_fold_dirs": false,
   },
   "icon_theme": "VSCode Icons for Zed (Dark Angular)",
   "ui_font_size": 20,
